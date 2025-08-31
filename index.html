@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Binit Sensei | Art Portfolio</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: #111;
+      color: #fff;
+      text-align: center;
+    }
+    header {
+      padding: 2rem;
+      background: linear-gradient(90deg, #222, #444);
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+    header p {
+      margin: 0.5rem 0 0;
+      font-size: 1.2rem;
+      color: #aaa;
+    }
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1rem;
+      padding: 2rem;
+    }
+    .gallery img {
+      width: 100%;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+      transition: transform 0.3s;
+    }
+    .gallery img:hover {
+      transform: scale(1.05);
+    }
+    footer {
+      padding: 2rem;
+      background: #222;
+      margin-top: 2rem;
+    }
+    footer a {
+      color: #1DA1F2;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    footer a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Binit Sensei</h1>
+    <p>Artist | Portraits | Commissions</p>
+  </header>
+
+  <section class="gallery">
+    <img src="your-art-1.jpg" alt="Artwork 1">
+    <img src="your-art-2.jpg" alt="Artwork 2">
+    <img src="your-art-3.jpg" alt="Artwork 3">
+    <img src="your-art-4.jpg" alt="Artwork 4">
+  </section>
+
+  <footer>
+    <p>📩 For commissions & collabs DM me on <a href="https://instagram.com/binit__sensei" target="_blank">Instagram</a></p>
+  </footer>
+</body>
+</html>
