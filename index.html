@@ -3,73 +3,125 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>BINIT ARTs | Art Portfolio</title>
+  <title>Binit Sensei | Portfolio</title>
   <style>
     body {
       margin: 0;
       font-family: 'Poppins', sans-serif;
       background: #111;
       color: #fff;
-      text-align: center;
     }
     header {
-      padding: 2rem;
-      background: linear-gradient(90deg, #222, #444);
+      height: 100vh;
+      background: url('your-hero-image.jpg') center/cover no-repeat;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      flex-direction: column;
     }
     header h1 {
+      font-size: 3rem;
       margin: 0;
-      font-size: 2.5rem;
     }
     header p {
-      margin: 0.5rem 0 0;
       font-size: 1.2rem;
-      color: #aaa;
+      opacity: 0.8;
     }
-    .gallery {
+    header a {
+      margin-top: 20px;
+      padding: 12px 30px;
+      background: #ff4757;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 30px;
+      transition: 0.3s;
+    }
+    header a:hover {
+      background: #e84118;
+    }
+    section {
+      padding: 60px 10%;
+    }
+    .about, .gallery, .commissions {
+      text-align: center;
+    }
+    .about p {
+      max-width: 700px;
+      margin: auto;
+      line-height: 1.6;
+    }
+    .gallery-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 1rem;
-      padding: 2rem;
+      gap: 20px;
+      margin-top: 40px;
     }
-    .gallery img {
+    .gallery-grid img {
       width: 100%;
       border-radius: 10px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.5);
       transition: transform 0.3s;
     }
-    .gallery img:hover {
+    .gallery-grid img:hover {
       transform: scale(1.05);
     }
+    .commissions ul {
+      list-style: none;
+      padding: 0;
+    }
+    .commissions li {
+      margin: 15px 0;
+      font-size: 1.1rem;
+    }
     footer {
-      padding: 2rem;
-      background: #222;
-      margin-top: 2rem;
-    }
-    footer a {
-      color: #1DA1F2;
-      text-decoration: none;
-      font-weight: bold;
-    }
-    footer a:hover {
-      text-decoration: underline;
+      text-align: center;
+      padding: 20px;
+      background: #000;
+      font-size: 0.9rem;
+      opacity: 0.7;
     }
   </style>
 </head>
 <body>
+
   <header>
     <h1>Binit Sensei</h1>
-    <p>Sketches | Portraits | Anime | Commissions</p>
+    <p>Artist | Portraits | Anime Sketches</p>
+    <a href="#gallery">View My Work</a>
   </header>
 
-  <section class="gallery">
-    <img src="images/IMG_20250613_204807.jpg" alt="MY Artwork" width="400">
-    <img src="images/IMG_20250623_160237.jpg" alt="MY Artwork" width="400">
-    <img src="images/IMG_20250821_144608.jpg" alt="MY Artwork" width="400">
-    <img src="images/IMG_20250822_172508.jpg" alt="MY Artwork" width="400">
+  <section class="about">
+    <h2>About Me</h2>
+    <p>
+      Hi, I’m Binit — a self-taught artist passionate about charcoal, pencil sketches, and anime-inspired art.
+      I create unique portraits and take commission work for those who want something special.
+    </p>
+  </section>
+
+  <section class="gallery" id="gallery">
+    <h2>Gallery</h2>
+    <div class="gallery-grid">
+      <img src="images/IMG_20250821_144608.jpg" alt="Artwork 1">
+      <img src="images/IMG_20250822_144608.jpg" alt="Artwork 2">
+      <img src="your-art3.jpg" alt="Artwork 3">
+      <img src="your-art4.jpg" alt="Artwork 4">
+    </div>
+  </section>
+
+  <section class="commissions">
+    <h2>Commissions</h2>
+    <p>Want custom artwork? Here’s how to order:</p>
+    <ul>
+      <li>1. DM me on Instagram (@binit__sensei)</li>
+      <li>2. Share your idea or reference</li>
+      <li>3. Get your personalized sketch delivered</li>
+    </ul>
+    <a href="https://instagram.com/binit__sensei" target="_blank">DM on Instagram</a>
   </section>
 
   <footer>
-    <p>📩 For commissions & collabs DM me on <a href="https://instagram.com/binit__sensei" target="_blank">Instagram</a></p>
+    © 2025 Binit Sensei | Made with ❤️ & Charcoal
   </footer>
+
 </body>
 </html>
